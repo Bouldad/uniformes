@@ -1,2 +1,2 @@
 # uniformes
-Sistema de control de entrega de Uniformes
+Sistema para el control de uniformes

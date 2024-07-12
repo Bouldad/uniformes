@@ -1,0 +1,90 @@
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+}
+
+.title {
+    font-size: 3em;
+    color: black;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background: orange;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+}
+
+.menu-button {
+    background-color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    color: #333;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    width: 70%;
+    margin: 0.5em 0;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-button:hover {
+    background-color: #ecf0f1;
+    transform: scale(1.5);
+}
+
+.menu-button:active {
+    transform: scale(1.05);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.btnsalir{
+    position: absolute;
+    top: 10px; /* Ajusta según sea necesario */
+    right: 20px; /* Ajusta según sea necesario */
+    padding: 15px 30px;
+    background-color: #ffffff;
+    color: #333;
+    border: none;
+    font-size: 1.5em
+}
+.btnsalir {
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    width: 4.5%;
+    margin: 0.5em 0;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btnsalir:hover {
+    background-color: #ecf0f1;
+    transform: scale(1.2);
+}
+
+.btnsalir:active {
+    transform: scale(1.05);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,277 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    top: 20px;
+}
+.form-container {
+    background-color: orange;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
+}
+.form-group {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.form-group button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-group button:hover {
+    background-color: #0056b3;
+}
+.btninicio{
+    position: absolute;
+    left:1em;
+    top:1em;
+    list-style-type: none;
+}
+
+.btninicio {
+    background-color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    color: #333;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    width: 4.5%;
+    margin: 0.5em 0;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btninicio:hover {
+    background-color: #ecf0f1;
+    transform: scale(1.5);
+}
+
+
+
+
+
+
+
+
+
+.btnatras{
+    position: absolute;
+    left:7em;
+    top:1em;
+    list-style-type: none;
+}
+
+.btnatras {
+    background-color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    color: #333;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    width: 4.5%;
+    margin: 0.5em 0;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btnatras:hover {
+    background-color: #ecf0f1;
+    transform: scale(1.5);
+}
+
+
+
+
+
+
+.btnimprimir{
+    position: absolute;
+    left:45%;
+    top:80%;
+    list-style-type: none;
+}
+
+.btnimprimir {
+    
+    border: none;
+    
+    
+    color: #333;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    width: 4.5%;
+    margin: 0.5em 0;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btninicio:active {
+    transform: scale(1.05);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.btnsalir{
+    
+    position: absolute;
+    top: 10px; /* Ajusta según sea necesario */
+    right: 20px; /* Ajusta según sea necesario */
+    padding: 15px 30px;
+    background-color: #ffffff;
+    color: #333;
+    border: none;
+    font-size: 1.5em
+}
+.btnsalir {
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    width: 4.5%;
+    margin: 0.5em 0;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btnsalir:hover {
+    background-color: #ecf0f1;
+    transform: scale(1.2);
+}
+
+.btnsalir:active {
+    transform: scale(1.05);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}   
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+}
+
+table th {
+    background-color: #007bff;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+table td {
+    color: #444;
+}
+
+.total-row {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+.total-row {
+    font-weight: bold;
+}
+/* Estilo específico para impresión */
+     /* Dentro del @media print en tu archivo styles2.css */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #printableArea, #printableArea * {
+        visibility: visible;
+    }
+    #printableArea {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    table {
+        background-color: #fff; /* Fondo blanco */
+        color: #333; /* Color de texto */
+    }
+    th {
+        background-color: #007bff; /* Fondo azul para encabezados */
+        color: #fff; /* Color de texto blanco para encabezados */
+    }
+    .total-row {
+        background-color: #f2f2f2; /* Fondo gris claro para fila total */
+        font-weight: bold;
+    }
+    /* Otros estilos necesarios para la impresión */
+    table {
+        page-break-inside: auto; /* Permitir saltos de página dentro de la tabla */
+    }
+
+    tr {
+        page-break-inside: avoid; /* Evitar saltos de página dentro de las filas */
+    }
+    thead {
+        display: table-header-group; /* Asegurar que el encabezado se repita en cada página */
+    }
+}
